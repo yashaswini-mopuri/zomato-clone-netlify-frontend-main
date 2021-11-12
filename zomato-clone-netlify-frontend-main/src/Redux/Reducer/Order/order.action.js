@@ -7,7 +7,7 @@ export const createOrder = (amount) => async (dispatch) => {
   try {
     const order = await axios({
       method: "POST",
-      url: "https://zomato-clone-heroku-backend.herokuapp.com/payments/new",
+      url: "https://zomato2.herokuapp.com/payments/new",
       data: { amount },
     });
 
@@ -34,7 +34,7 @@ export const orderPlaced =
         };
         axios({
           method: "POST",
-          url: `https://zomato-clone-heroku-backend.herokuapp.com/order/new`,
+          url: `https://zomato2.herokuapp.com/order/new`,
           data: { orderDetails },
         });
       });

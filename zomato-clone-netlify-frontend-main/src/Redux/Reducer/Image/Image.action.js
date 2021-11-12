@@ -7,7 +7,7 @@ export const getImage = (_id) => async (dispatch) => {
   try {
     const Image = await axios({
       method: "GET",
-      url: `https://zomato-clone-heroku-backend.herokuapp.com/image/${_id}`,
+      url: `https://zomato2.herokuapp.com/image/${_id}`,
     });
     return dispatch({ type: GET_IMAGE, payload: Image.data });
   } catch (error) {

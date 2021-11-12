@@ -36,7 +36,7 @@ export default function SignIn({ isOpen, setIsOpen }) {
 
   const googleSignIn = () =>
     (window.location.href =
-      "https://zomato-clone-heroku-backend.herokuapp.com/auth/google");
+      "https://zomato2.herokuapp.com/auth/google");
 
   return (
     <>
